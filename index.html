@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Birthday Card</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="confetti"></canvas>
+  <canvas id="fireworks"></canvas>
+
+  <div class="container">
+    <h1>happy birthday kakak !!</h1>
+
+    <div class="section">
+      <div id="countdown"></div>
+    </div>
+
+    <div class="section">
+      <p id="message"></p>
+    </div>
+
+    <div class="section">
+      <h2>Make a wish</h2>
+      <div class="candle" id="candle">
+        <div class="flame" id="flame"></div>
+      </div>
+      <p id="candleSurprise" class="hidden">
+        kakakk, selamat bertambah usia ya !
+semoga dari hari ini dan kedepannya, kamu selalu di dampingi oleh senyuman yang tenang.
+im here, bukan raganya, tapi tetap dengan doa dan keinginan yang sama.
+semoga kamu selalu baik baik aja ya ! ✨
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>another wishes</h2>
+      <div id="gift">🎁</div>
+      <p id="giftText" class="hidden">
+        aku harap tahun ini jadi tahun yang lebih ringan buat kamu. semoga kamu nemuin hal" kecil yang bikin kamu senyum tanpa alasan, orang" yang beneran syg sama kamu, dan jalan yang bikin kamu ngerasa nyaman sama diri sendiri. semoga setiap rintangan nggak bikin kamu down, tapi malah bikin kamu ngerasa kuat dan yakin sama pilihan kamu sendiri.
+
+aku juga berharap kamu ga kehabisan keberanian buat ngejar mimpi" yang selama ini kamu simpen, dan tetep bisa nemu waktu buat diri sendiri, buat tenang, dan buat ngerasa aman di tengah ribetnya hidup. semoga semua yang kamu jalani sekarang (wlaupun kadang ga keliatan dari luar) bisa ngasih kamu kebahagiaan yang tulus.
+
+dan semoga, akan selalu ada banyak hal baik yang tetep nyampe ke kamu, tanpa harus dicari atau diingat terus !! hidup lebih baik ya !!
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>📷 Your Photo</h2>
+      <img id="mainPhoto" src="assets/your-photo.png" alt="Birthday Photo">
+    </div>
+  </div>
+
+  <!-- Music -->
+  <audio id="music" loop>
+    <source src="https://cdn.pixabay.com/audio/2022/03/15/audio_22b0a43fa6.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
+
