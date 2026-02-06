@@ -1,0 +1,104 @@
+/* Fonts */
+body, .section, #message, #countdown, #gift, #candleSurprise {
+  font-family: 'Inter', sans-serif;
+}
+
+/* General */
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #f2f2f2, #e6dfd3);
+  color: #2b2b2b;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 10px;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  margin-top: 20px;
+  color: #1f1f1f;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.section {
+  margin: 20px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+#countdown {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #5a4a42;
+}
+
+/* Candle */
+.candle {
+  width: 50px;
+  height: 120px;
+  background: linear-gradient(#c7b299, #8b6f47);
+  margin: 20px auto;
+  border-radius: 6px;
+  cursor: pointer;
+  position: relative;
+}
+.flame {
+  width: 18px;
+  height: 32px;
+  background: radial-gradient(circle, #ffdd99, #ff9900);
+  border-radius: 50%;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: flicker 0.2s infinite;
+}
+@keyframes flicker {
+  0% { transform: translateX(-50%) scale(1); }
+  50% { transform: translateX(-50%) scale(0.85); }
+  100% { transform: translateX(-50%) scale(1); }
+}
+
+.hidden { display: none; }
+
+/* Gift */
+#gift { font-size: 2.8rem; cursor: pointer; margin-top: 10px; }
+
+/* Photo */
+#mainPhoto {
+  width: 80%;
+  max-width: 320px;
+  height: auto;
+  border-radius: 16px;
+  object-fit: cover;
+  margin-top: 12px;
+  border: 2px solid #8b6f47;
+}
+
+/* Canvas */
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  h1 { font-size: 2.2rem; }
+  .section { padding: 15px; }
+  #countdown { font-size: 1rem; }
+  #gift { font-size: 2.2rem; }
+}
+
